@@ -3,14 +3,14 @@ const experience = [
     title: "Intern",
     company: "IIT Hyderabad",
     period: "Dec 2025 - Present",
-    description: "Worked on database-focused technical tasks and applied systems-level engineering practices.",
+    description: "",
     skills: ["Databases"],
   },
   {
     title: "Software Developer Intern",
     company: "Matrix Capital",
-    period: "May 2025 - Jun 2025",
-    description: "Contributed to web development deliverables and engineering workflow improvements.",
+    period: "May 2025 - June 2025",
+    description: "",
     skills: ["Web Development"],
   },
   {
@@ -18,7 +18,7 @@ const experience = [
     company: "Mozilla Firefox Club, VIT Vellore",
     period: "Jan 2026 - Present",
     description:
-      "Leading technical initiatives. Previously served as Technical Core (Mar 2025 - Dec 2025), promoting open-source and collaborative development.",
+      "Leading technical initiatives at the Mozilla Firefox Club. Previously served as Technical Core (March 2025 - Dec 2025), promoting open-source technologies and collaborative development among students.",
     skills: ["Backend Development", "Open Source", "Technical Projects"],
   },
 ];
@@ -52,173 +52,222 @@ const languages = [
 
 const projects = [
   {
-    title: "Coming Soon",
-    desc: "Research-grade system exploring NLP, document analysis, and trust verification in academic content.",
-    tags: ["ML/NLP", "Research Integrity", "Python"],
-  },
-  {
-    title: "Coming Soon",
-    desc: "Systems-focused project exploring database internals, execution plans, and optimizer behavior.",
-    tags: ["Systems", "Databases", "Performance"],
+    title: "Reference Hallucination Detector",
+    desc: "Research-grade pipeline for citation-grounded trust verification in academic text using NLP, reference extraction, and claim-to-source consistency checks.",
+    tags: ["NLP", "Reference Verification", "Research Integrity", "Python"],
   },
   {
     title: "archAIc",
-    desc: "AI-driven reliability engineering platform with a 6-service FastAPI microservices architecture (auth, product, db, payment, anomaly-detector, ai-operator), full observability, chaos testing, and automated incident analysis. Implemented distributed trace propagation (X-Trace-ID), OpenTelemetry instrumentation, structured logging, Prometheus/Jaeger/Grafana/Loki stack, ML anomaly detection from Prometheus signals, and an AI operator that generates structured RCA/remediation plans. Added Next.js control-plane dashboard with one-click failure injection/reset and k6 resilience validation scenarios.",
-    tags: ["FastAPI", "Microservices", "OpenTelemetry", "Prometheus", "Jaeger", "Grafana", "Loki", "Chaos Engineering", "Isolation Forest", "Next.js", "k6"],
-  },
-  {
-    title: "Argus (AetherQuery)",
-    desc: "Full-stack SQL analytics platform for exact vs approximate query execution across DuckDB, PostgreSQL, and MySQL with plan introspection and performance tracking. Built a FastAPI execution pipeline with multi-database adapters, normalized EXPLAIN parsing, REST APIs for execution/optimization/history/cache/progress, adaptive approximate engine with progressive sampling and convergence stopping, benchmark mode, TTL caching, and query history. Built React + TypeScript dual-panel UI with CSV-to-DuckDB ingestion, live progress polling, cache indicators, rewritten-query transparency, and interactive plan graph visualization (ReactFlow + dagre).",
-    tags: ["FastAPI", "React 19", "TypeScript", "DuckDB", "PostgreSQL", "MySQL", "Approximate Query Processing", "ReactFlow", "dagre"],
+    desc: "Built an AI-driven reliability engineering platform with 6 FastAPI microservices, OpenTelemetry trace propagation (X-Trace-ID), and chaos controls for timeout/error/cpu/crash/bad-data failure injection.",
+    tags: ["FastAPI Microservices", "Prometheus/Grafana/Jaeger/Loki", "Chaos Engineering", "Kubernetes", "Next.js"],
   },
   {
     title: "Scotland Yard",
-    desc: "Real-time multiplayer backend for digital Scotland Yard with turn-based asymmetric gameplay.",
+    desc: "Architected real-time multiplayer backend for a digital adaptation of Scotland Yard with graph-based map and asymmetric gameplay.",
     tags: ["Node.js", "Express", "PostgreSQL", "Redis"],
     link: "https://github.com/Ad1th/Gravitas-Backend-25-Complete",
   },
   {
     title: "BlindSpot",
-    desc: "Edge assistive device with YOLOv8-seg and CNN-LSTM on Raspberry Pi 5 plus LLM audio narration.",
+    desc: "Led edge integration and deployment of a spatio-temporal assistive device using YOLOv8-seg and CNN-LSTM on Raspberry Pi 5.",
     tags: ["Raspberry Pi", "YOLOv8", "CNN-LSTM", "Edge AI", "Python"],
   },
   {
+    title: "Argus",
+    desc: "Built a SQL analytics workspace where users upload CSV files, run SQL commands, inspect detailed query plans, and explore operator-level execution graphs.",
+    tags: ["FastAPI", "React + TypeScript", "DuckDB", "Query Plan Analysis", "ReactFlow"],
+  },
+  {
     title: "OWC Wave Energy Harvester",
-    desc: "Oscillating Water Column energy harvesting with sensor-based conditioning and output regulation.",
+    desc: "Adapted point-source oscillator circuitry for Oscillating Water Column energy harvesting with sensing and output regulation stages.",
     tags: ["ACS712", "Voltage Dividers", "Power Electronics", "Signal Conditioning"],
   },
   {
     title: "Point Wave Energy Harvester",
-    desc: "Power conditioning circuitry, boost converter, MPPT, and IoT telemetry via ESP8266.",
+    desc: "Designed buoy-based wave energy circuitry with full-wave rectifier, boost converter, MPPT algorithm, and IoT telemetry.",
     tags: ["Op-AMP 741", "Boost Converter", "Arduino", "ESP8266", "MPPT"],
     image: "public/wave-energy-3.jpg",
   },
   {
     title: "Cloudify",
-    desc: "Cloud storage platform inspired by Google Drive with secure uploads and AI-driven search.",
+    desc: "Cloud storage platform inspired by Google Drive with secure uploads, file organization, and AI-driven search.",
     tags: ["PostgreSQL", "Express.js", "Vercel"],
     image: "public/cloudify.png",
     link: "https://github.com/Ad1th/file-mgmt",
   },
   {
     title: "CropLink",
-    desc: "Farm-to-laborer SMS workflow with crop intelligence based on farm, soil, and climate inputs.",
+    desc: "Farm-to-laborer SMS workflow enabling direct communication and crop intelligence based on soil and climate context.",
     tags: ["PostgreSQL/Supabase", "Gemini API", "Twilio SMS", "HTML/CSS/JS"],
     image: "public/placeholder.jpg",
   },
   {
     title: "Profile/Portfolio Website",
-    desc: "Portfolio site showcasing projects, skills, and journey with smooth animations and responsive layout.",
+    desc: "Portfolio site built with Next.js and Tailwind CSS to showcase projects, skills, and journey.",
     tags: ["Next.js", "React", "Tailwind CSS", "GSAP"],
     image: "public/profile.png",
     link: "https://github.com/Ad1th/Profile",
   },
   {
     title: "SevaVerse",
-    desc: "Platform connecting NGOs, volunteers, and donors for child welfare operations.",
+    desc: "Platform connecting NGOs, volunteers, and donors with role-based operations and dashboards.",
     tags: ["Node.js", "Prisma + SQLite", "Tailwind CSS"],
     image: "public/sevaverse.png",
     link: "https://github.com/Ad1th/SevaVerse",
   },
   {
     title: "EcoSync",
-    desc: "Hackathon sustainability solution in logistics and energy with Supabase + FastAPI.",
+    desc: "Hackathon sustainability solution in logistics and energy with Supabase backend and FastAPI services.",
     tags: ["Supabase", "FastAPI", "HTML/CSS/JS"],
     image: "public/EcoSync.png",
     link: "https://github.com/Ad1th/OptiSync",
   },
   {
     title: "Threddit",
-    desc: "Productivity Chrome extension that analyzes web usage and generates nudges.",
+    desc: "Productivity-focused Chrome extension built with React, FastAPI, and Gemini API for browsing insights.",
     tags: ["React", "FastAPI", "PostgreSQL", "Gemini API", "Chrome Extensions"],
     image: "public/threddit.png",
     link: "https://github.com/Ad1th/3braincells_DevJams-24",
   },
   {
     title: "EchoChamber",
-    desc: "Anonymous forum web app for confessions and real-time interactions.",
+    desc: "Anonymous forum web app enabling users to post confessions, chat, and share thoughts freely.",
     tags: ["HTML", "CSS", "JavaScript", "PostgreSQL"],
     image: "public/echochamber.png",
     link: "https://github.com/Ad1th/EchoChamber",
   },
   {
     title: "HOSPITECH",
-    desc: "Lightweight clinic management system with records, appointments, and role-based logins.",
+    desc: "Lightweight clinic management system to digitize records, appointments, and doctor profiles.",
     tags: ["Python", "SQL/MySQL", "Tkinter"],
     image: "public/lhospital.png",
     link: "https://github.com/Ad1th/Hospitech--Hospital-Management-System",
   },
   {
     title: "Snek",
-    desc: "Retro snake game built in Python + Pygame with difficulty progression.",
+    desc: "Retro snake game built using Python and Pygame with menu flow and dynamic difficulty.",
     tags: ["Python", "Pygame"],
     image: "public/snek.png",
     link: "https://github.com/Ad1th/Snek---Snake_Game",
   },
 ];
 
-const patent = {
-  title: "A system for real time environmental perception and assistance for a visually impaired user",
-  desc: "Filed through VIT as an ordinary Computer Science application describing a predictive, assistive system for real-time environmental perception.",
-  chips: ["Published", "App No: 202641010249", "Filed: 31/01/2026", "Published: 13/02/2026"],
-};
+const patents = [
+  {
+    title: "A system for real time environmental perception and assistance for a visually impaired user",
+    desc: "Filed through Vellore Institute of Technology in Computer Science for real-time environmental perception and assistive support workflows.",
+    chips: ["Published", "App No: 202641010249", "Filed: 31/01/2026", "Published: 13/02/2026"],
+  },
+  {
+    title: "Upcoming - Filed",
+    desc: "Filed work focused on the electronics stack: sensing circuits, signal conditioning, instrumentation, and power-conditioning design.",
+    chips: ["Upcoming - Filed"],
+  },
+];
 
 const achievements = [
-  ["AI Solutions Track Winner - Code 2 Create Hackathon", "2025"],
-  ["100% Attendance - VIT", "2024-25"],
-  ["First Place in Hackathon - CodeWars", "2024"],
-  ["PC Building Competition - Second Place", "2023"],
-  ["OCI Foundations Certification", "2025"],
-  ["Python Certification (HackerRank)", "2025"],
-  ["SQL Basic Certification (HackerRank)", "2025"],
-  ["SQL Intermediate Certification (HackerRank)", "2025"],
-  ["AI Builder and Power Apps Course", "2020"],
-  ["Virtual Internship in Mechanical Engineering", "2019"],
+  {
+    title: "AI solutions Track Winner - Code 2 Create (C2C) Hackathon",
+    year: "2025",
+    description:
+      "Won the AI solutions track at Code 2 Create (C2C) Hackathon held at VIT Vellore by building a blind assistance tool using image recognition and Raspberry Pi for real-time audio feedback.",
+  },
+  {
+    title: "Cent Percent Attendance - Vellore Institute of Technology (2024-25)",
+    year: "2024-25",
+    description:
+      "Awarded a Certificate of Appreciation for achieving 100% attendance in B.Tech Computer Science and Engineering (Information Security).",
+  },
+  {
+    title: "First Place in Hackathon - CodeWars",
+    year: "2024",
+    description: "Won the CodeWars hackathon conducted by NPS KRM.",
+  },
+  {
+    title: "PC Building Competition - Second Place",
+    year: "2023",
+    description: "Achieved second place in a competitive PC building event hosted by NPS HSR.",
+  },
+  {
+    title: "OCI Foundations Certification",
+    year: "2025",
+    description:
+      "Obtained Oracle Cloud Infrastructure Foundations certification demonstrating core OCI and cloud knowledge.",
+  },
+  {
+    title: "Python Certification",
+    year: "2025",
+    description: "Received a certification in Python programming from HackerRank.",
+  },
+  {
+    title: "SQL Basic Skill Certification",
+    year: "2025",
+    description: "Received a certification in SQL (Basic) from HackerRank.",
+  },
+  {
+    title: "SQL Intermediate Skill Certification",
+    year: "2025",
+    description: "Received a certification in SQL (Intermediate) from HackerRank.",
+  },
+  {
+    title: "Use AI Builder and Power Apps to Process Invoice Data",
+    year: "2020",
+    description:
+      "Received a completion certificate for a Coursera course on AI Builder and Power Apps invoice processing.",
+  },
+  {
+    title: "Virtual Internship in Mechanical Engineering",
+    year: "2019",
+    description: "Completed a virtual internship in Mechanical Engineering by Mindler.",
+  },
 ];
 
 const hackathons = [
   {
-    title: "Code 2 Create (C2C) - AI Solutions Track Winner",
-    time: "Sep 2025 - VIT Vellore",
-    desc: "Built a blind assistance tool using image recognition and local dialect audio feedback.",
-    tags: ["Python + ML", "Raspberry Pi"],
+    title: "Women Techies'26 - Finalist - Top 10 Teams",
+    time: "March 2026 - VIT Vellore, India",
+    desc: "Reached finalist stage as a top 10 team by building AetherQuery, a SQL analytics platform with CSV upload, SQL execution, and detailed query-plan visualization.",
+    tags: ["FastAPI", "React + TypeScript", "DuckDB", "Query Plan Visualization"],
+  },
+  {
+    title: "TechSolstice",
+    time: "March 2026 - MIT Bangalore, India",
+    desc: "Built archAIc, an AI-driven reliability engineering platform with microservices observability, chaos injection, and automated incident analysis workflows.",
+    tags: ["FastAPI Microservices", "OpenTelemetry", "Chaos Engineering", "Kubernetes"],
+  },
+  {
+    title: "Code 2 Create (C2C) - AI solutions Track Winner",
+    time: "September 2025 - VIT Vellore, India",
+    desc: "Built a blind assistance tool using image recognition for real-time local-dialect audio feedback.",
+    tags: ["Python + ML", "Raspberry Pi (edge computing)"],
   },
   {
     title: "Women Techies'25",
-    time: "Apr 2025 - VIT Vellore",
-    desc: "Built SevaVerse, a platform connecting NGOs, volunteers, and well-wishers.",
-    tags: ["Node.js", "Prisma + SQLite", "Tailwind"],
+    time: "April 2025 - VIT Vellore, India",
+    desc: "Built SevaVerse, a collaborative platform connecting NGOs, volunteers, and well-wishers with role-based access and dashboards.",
+    tags: ["Node.js + Express", "Prisma + SQLite", "Tailwind CSS"],
   },
   {
     title: "Yantra Central Hack",
-    time: "Jan 2025 - VIT Vellore",
-    desc: "Built OptiSync, an ML-powered sustainability platform for textile operations.",
-    tags: ["Python + ML", "Supabase/PostgreSQL", "HTML/CSS/JS"],
+    time: "January 2025 - VIT Vellore, India",
+    desc: "Built OptiSync, an ML-powered sustainability platform for the textile industry to optimize water and electricity usage.",
+    tags: ["Python + ML", "Supabase / PostgreSQL", "HTML/CSS/JS"],
   },
   {
     title: "DevJams",
-    time: "Sep 2024 - VIT Vellore",
-    desc: "Built Threddit, a Gemini-powered productivity extension.",
+    time: "September 2024 - VIT Vellore, India",
+    desc: "Built Threddit, a smart Chrome extension using Gemini API to detect distractions and deliver AI nudges.",
     tags: ["Gemini API", "Chrome Extension", "FastAPI"],
   },
   {
     title: "CodeWars",
-    time: "Feb 2024 - NPS KRM, Bengaluru",
+    time: "February 2024 - NPS KRM, Bangalore, India",
     desc: "Won first place.",
     tags: [],
   },
 ];
 
-const hobbies = [
-  "robotics",
-  "photography",
-  "cycling",
-  "trekking",
-  "gaming",
-  "music",
-  "traveling",
-  "gardening",
-];
+const hobbies = ["robotics", "photography", "cycling", "trekking", "gaming", "music", "traveling", "gardening"];
 
 const timeline = [
   ["2006", "Born in Hyderabad", ""],
@@ -242,19 +291,15 @@ function card(title, content, meta = "", tags = [], image = "", link = "") {
   const titleHtml = link
     ? `<h3><a href="${link}" target="_blank" rel="noreferrer">${title}</a></h3>`
     : `<h3>${title}</h3>`;
-  return `<article class="card reveal">${imageHtml}${titleHtml}${metaHtml}<p>${content}</p>${tagsHtml}</article>`;
+  return `<article class="card reveal">${imageHtml}${titleHtml}${metaHtml}<p>${content || ""}</p>${tagsHtml}</article>`;
 }
 
 function inject() {
   const experienceGrid = document.getElementById("experienceGrid");
-  experienceGrid.innerHTML = experience
-    .map((e) => card(`${e.title} - ${e.company}`, e.description, e.period, e.skills))
-    .join("");
+  experienceGrid.innerHTML = experience.map((e) => card(`${e.title} - ${e.company}`, e.description, e.period, e.skills)).join("");
 
   const skillsGrid = document.getElementById("skillsGrid");
-  skillsGrid.innerHTML = skills
-    .map((s) => card(s.title, s.items.join(" | "), "", s.items))
-    .join("");
+  skillsGrid.innerHTML = skills.map((s) => card(s.title, s.items.join(" | "), "", s.items)).join("");
 
   const languagesGrid = document.getElementById("languagesGrid");
   languagesGrid.innerHTML = languages
@@ -272,28 +317,26 @@ function inject() {
     .join("");
 
   const projectsGrid = document.getElementById("projectsGrid");
-  projectsGrid.innerHTML = projects
-    .map((p) => card(p.title, p.desc, "", p.tags, p.image, p.link))
-    .join("");
+  projectsGrid.innerHTML = projects.map((p) => card(p.title, p.desc, "", p.tags, p.image, p.link)).join("");
 
   const patentCard = document.getElementById("patentCard");
-  patentCard.innerHTML = `
-    <article class="card reveal">
-      <h3>${patent.title}</h3>
-      <div class="tags">${patent.chips.map((c) => `<span>${c}</span>`).join("")}</div>
-      <p>${patent.desc}</p>
-    </article>
-  `;
+  patentCard.innerHTML = patents
+    .map(
+      (p) => `
+      <article class="card reveal" style="margin-bottom:16px">
+        <h3>${p.title}</h3>
+        <div class="tags">${p.chips.map((c) => `<span>${c}</span>`).join("")}</div>
+        <p>${p.desc}</p>
+      </article>
+    `
+    )
+    .join("");
 
   const achievementsGrid = document.getElementById("achievementsGrid");
-  achievementsGrid.innerHTML = achievements
-    .map(([t, y]) => card(t, "", y, []))
-    .join("");
+  achievementsGrid.innerHTML = achievements.map((a) => card(a.title, a.description, a.year, [])).join("");
 
   const hackathonsList = document.getElementById("hackathonsList");
-  hackathonsList.innerHTML = hackathons
-    .map((h) => card(h.title, h.desc, h.time, h.tags))
-    .join("");
+  hackathonsList.innerHTML = hackathons.map((h) => card(h.title, h.desc, h.time, h.tags)).join("");
 
   const hobbiesGrid = document.getElementById("hobbiesGrid");
   hobbiesGrid.innerHTML = hobbies
